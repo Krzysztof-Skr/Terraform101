@@ -1,0 +1,13 @@
+# Ignoruj pliki binarne i moduły Terraforma
+.terraform/
+*.executable
+
+# Ignoruj pliki stanu (często zawierają tajne dane, ich też nie puszczaj na GitHub!)
+*.tfstate
+*.tfstate.*
+crash.log
+crash.*.log
+
+# Ignoruj pliki ze zmiennymi zawierające hasła
+# *.tfvars
+*.tfvars.json
