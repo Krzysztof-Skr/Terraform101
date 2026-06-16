@@ -12,15 +12,9 @@ terraform {
     }
   }
   backend "azurerm" {
-    resource_group_name  = "rg-terraform-state-dev"
-    storage_account_name = "sthprtm8jqgd"
-    container_name       = "tfstate"
-    key                  = "obserability-dev"
   }
 }
 
-# Skonfiguruj dostawcę Microsoft Azure
 provider "azurerm" {
   features {}
-  subscription_id = "ec560136-63d2-4829-8eb1-c7fd3851b373"
 }
